@@ -8,7 +8,7 @@ import {
 } from '../../../helpers/ConsultationHelper.js';
 
 describe('Consultation - Pending', () => {
-  // ─── Page & Table ─────────────────────────────────────────
+  // Page & Table
 
   it('should load the pending page with at least one row', async () => {
     await openPendingConsultation();
@@ -17,7 +17,7 @@ describe('Consultation - Pending', () => {
     expect(rows.length).toBeGreaterThan(0);
   });
 
-  // ─── Row Actions ──────────────────────────────────────────
+  // Row Actions
 
   it('should open a modal when a row action is clicked and close it', async () => {
     await openPendingConsultation();
@@ -43,7 +43,7 @@ describe('Consultation - Pending', () => {
     expect(isVisible).toBe(true);
   });
 
-  // ─── End-to-End ───────────────────────────────────────────
+  // End-to-End 
 
   it('should complete the pending view flow', async () => {
     const result = await viewPendingConsultation({ rowIndex: 1, closeAfter: true });

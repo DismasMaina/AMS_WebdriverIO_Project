@@ -44,7 +44,7 @@ describe('Consultation - Appointments', () => {
     }
   });
 
-  // ─── Navigation ────────────────────────────────────────────────────────────
+  // Navigation & Initial State
 
   describe('Navigation', () => {
     it('should navigate to the Consultation Appointments page', async () => {
@@ -60,7 +60,7 @@ describe('Consultation - Appointments', () => {
     });
   });
 
-  // ─── Calendar Events ───────────────────────────────────────────────────────
+  // Calendar Events
 
   describe('Calendar Events', () => {
     it('should find appointment events on the calendar', async () => {
@@ -76,8 +76,6 @@ describe('Consultation - Appointments', () => {
       expect(calendarEvents.length).toBeGreaterThan(1);
     });
   });
-
-  // ─── Event Interaction (modal already opened & closed in before()) ─────────
 
   describe('Event Interaction', () => {
     it('should open a modal or drawer when a calendar event is clicked', async () => {
@@ -98,7 +96,7 @@ describe('Consultation - Appointments', () => {
     });
   });
 
-  // ─── End-to-End ────────────────────────────────────────────────────────────
+  // End-to-End
 
   describe('End-to-End', () => {
     it('should view the first calendar appointment and close the modal', async () => {

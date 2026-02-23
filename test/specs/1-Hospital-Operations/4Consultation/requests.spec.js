@@ -27,7 +27,7 @@ import {
  *   - Full end-to-end flow succeeds
  */
 describe('Consultation - Requests', () => {
-  // ─── Navigation ───────────────────────────────────────────
+  // Navigation
 
   describe('Navigation', () => {
     it('should navigate to the Consultation Requests page', async () => {
@@ -46,7 +46,7 @@ describe('Consultation - Requests', () => {
     });
   });
 
-  // ─── Serve a Request ──────────────────────────────────────
+  // Serve a Request 
 
   describe('Serve Request', () => {
     it('should open the consultation form after serving a request row', async () => {
@@ -70,7 +70,7 @@ describe('Consultation - Requests', () => {
     });
   });
 
-  // ─── Consultation Notes Form ──────────────────────────────
+  // Consultation Notes Form 
 
   describe('Consultation Notes', () => {
     beforeEach(async () => {
@@ -124,7 +124,7 @@ describe('Consultation - Requests', () => {
     });
   });
 
-  // ─── Diagnosis ────────────────────────────────────────────
+  // Diagnosis
 
   describe('Diagnosis', () => {
     beforeEach(async () => {
@@ -168,7 +168,7 @@ describe('Consultation - Requests', () => {
     });
   });
 
-  // ─── Save Notes & Admit ───────────────────────────────────
+  // Save Notes & Admit
 
   describe('Save Notes & Admit', () => {
     beforeEach(async () => {
@@ -221,7 +221,7 @@ describe('Consultation - Requests', () => {
     });
   });
 
-  // ─── End-to-End ───────────────────────────────────────────
+  // End-to-End
 
   describe('End-to-End', () => {
     it('should complete the full consultation request and admit flow', async () => {

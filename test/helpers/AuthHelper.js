@@ -50,6 +50,17 @@ async function navigateToApp() {
   console.log(`Navigating to: ${appUrl}`);
   await browser.url(appUrl);
   console.log('Navigation completed');
+
+  // Wait for page to load by checking for body or a common element
+  await browser.waitUntil(
+    async () => {
+      const body = await $('body');
+      return body.isDisplayed();
+    },
+    { timeout: 10000, timeoutMsg: 'Page did not load within 10 seconds' }
+  );
+
+  console.log('Page loaded successfully');
 }
 
 /**
