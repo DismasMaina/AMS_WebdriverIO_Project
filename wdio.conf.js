@@ -50,7 +50,10 @@ exports.config = {
     // https://saucelabs.com/platform/platform-configurator
     //
     capabilities: [{
-        browserName: 'chrome'
+        browserName: 'chrome',
+        'goog:chromeOptions': {
+            args: ['--headless', '--disable-gpu'] // Uncomment for CI/CD runs
+        }
     }],
 
     //
@@ -123,7 +126,13 @@ exports.config = {
     // Test reporter for stdout.
     // The only one supported by default is 'dot'
     // see also: https://webdriver.io/docs/dot-reporter
-    reporters: ['spec',['allure', {outputDir: 'allure-results'}]],
+    reporters: ['spec',
+        ['allure',
+             {outputDir: 'allure-results',
+                disableWebdriverStepsReporting: true,
+                disableWebdriverScreenshotsReporting: false,
+             }]
+            ],
 
     // Options to be passed to Mocha.
     // See the full list at http://mochajs.org/

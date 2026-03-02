@@ -1,6 +1,6 @@
-<!-- Copilot / AI agent instructions for WebdriverIO_Project_1 -->
+<!-- Copilot / AI agent instructions for WebdriverIO_Project -->
 
-# Quick agent guide — WebdriverIO_Project_1
+# Quick agent guide — AMS_WebdriverIO_Project
 
 This repo contains WebdriverIO E2E tests using Mocha and the Allure reporter. Keep instructions short and actionable: focus on how tests run, where artifacts live, and common patterns you will modify.
 
